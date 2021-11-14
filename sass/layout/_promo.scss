@@ -2,8 +2,11 @@
   background-color: var(--promo-bg);
   display: flex;
   flex-direction: row;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1200px) {
     flex-direction: column;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .promo__img {
@@ -58,6 +61,7 @@
   align-items: center;
   cursor: pointer;
   margin-top: 43px;
+  margin-bottom: 20px;
   padding: 20px 70px;
   letter-spacing: 0.04em;
   color: var(--white-cl);
