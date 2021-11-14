@@ -1,0 +1,29 @@
+.partners {
+  position: relative;
+  padding: 30px 60px;
+}
+
+.partners .slick-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+  border: 0;
+}
+.partners .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../../images/partners/arrleft.png);
+  background-repeat: no-repeat;
+}
+.partners .slick-arrow.slick-next {
+  right: 0;
+  background: url(../../images/partners/arrright.png);
+  background-repeat: no-repeat;
+}
+
+.partners__name {
+  text-align: center;
+  margin-top: 25px;
+}

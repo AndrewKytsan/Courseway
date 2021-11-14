@@ -1,0 +1,109 @@
+.header__container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.header {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0px;
+  background-color: var(--dark-bg);
+  background-image: linear-gradient(
+      rgba(189, 149, 105, 0.2),
+      rgba(204, 153, 102, 0.2)
+    ),
+    url(../images/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header__title {
+  font-weight: 700;
+  font-size: 26px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-cl);
+  display: block;
+  margin: auto;
+  padding-top: 60px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199.99px) {
+    font-size: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 60px;
+  }
+}
+.header__title-label {
+  display: block;
+  margin-top: 40px;
+  font-size: 20px;
+}
+.header__title-label {
+  @media screen and (min-width: 480px) and (max-width: 1199.99px) {
+    margin-top: 40px;
+    font-size: 26px;
+    font-weight: 600;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+}
+.header__form-btn {
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 43px;
+  padding: 23px 120px;
+  letter-spacing: 0.06em;
+  color: var(--white-cl);
+  background: var(--accent-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 5px;
+  transition: background-color 250ms var(--time-func);
+  @media screen and (max-width: 480px) {
+    padding: 23px 95px;
+  }
+}
+.header__form-btn:hover,
+.header__form-btn:focus {
+  background-color: var(--hover-cl);
+}
+.header__form-wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 1199.99px) {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.header__form-input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.header__form-input {
+  display: block;
+  width: 350px;
+  height: 60px;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 40px;
+  padding-left: 25px;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+.header__form-input::placeholder {
+  color: #a1a1a1;
+}

@@ -1,0 +1,15 @@
+.logo {
+  font-family: var(--logo-font);
+  font-weight: 300;
+  font-size: 32px;
+  color: var(--white-cl);
+  text-decoration: none;
+  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
+    font-size: 32px;
+    margin-right: 50px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 52px;
+    margin-right: 75px;
+  }
+}

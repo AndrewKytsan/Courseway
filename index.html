@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <title>Courseway</title>
+  </head>
+  <body>
+    <main>
+      <!--Header    -->
+      <header class="header">
+        <div class="container header__container">
+          <a class="logo mobile__logo" href="./index.html">Courseway</a>
+          <button type="button" class="mobile-menu__buton" data-menu-button>
+            <svg class="mobile-menu__icon">
+              <use
+                class="mobile-menu__icon--menu"
+                href="./images/icons/icons.svg#menu"
+              ></use>
+              <use
+                class="mobile-menu__icon--cross"
+                href="./images/icons/icons.svg#cross"
+              ></use>
+            </svg>
+          </button>
+          <div class="backdrop is-hidden" data-menu-overlay>
+            <div class="mobile-menu" data-menu>
+              <ul class="mobile-menu__list">
+                <li class="mobile__menu__item">
+                  <a
+                    class="link mobile__link nav__link--curent"
+                    href="./index.html"
+                    >Головна
+                  </a>
+                </li>
+                <li class="mobile__menu__item">
+                  <a class="link mobile__link" href="#">Курси </a>
+                </li>
+                <li class="mobile__menu__item">
+                  <a class="link mobile__link" href="#">Блог</a>
+                </li>
+                <li class="mobile__menu__item">
+                  <a class="link mobile__link" href="#">Про проект</a>
+                </li>
+                <li class="mobile__menu__item">
+                  <a class="link mobile__link" href="#">Реєстрація</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <nav class="nav">
+            <a class="logo header__logo" href="./index.html">Courseway</a>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="link nav__link nav__link--curent" href="./index.html"
+                  >Головна
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="link nav__link" href="./portfolio.html">Курси </a>
+              </li>
+              <li class="nav__item">
+                <a class="link nav__link" href="#">Блог</a>
+              </li>
+              <li class="nav__item">
+                <a class="link nav__link" href="#">Про проект</a>
+              </li>
+              <li class="nav__item">
+                <a class="link nav__link" href="#">Реєстрація</a>
+              </li>
+            </ul>
+          </nav>
+
+          <h1 class="header__title">
+            БЕЗКОШНОВНІ ОНЛАЙН-КУРСИ
+            <br />
+            <span class="header__title-label"
+              >ВІД ВИКЛАДАЧІВ ПРОВІДНИХ УНІВЕРСИТЕТІВ</span
+            >
+          </h1>
+          <div class="header__form-wrapper">
+            <form action="#" class="header__form">
+              <div class="header__form-input-wrapper">
+                <input
+                  class="header__form-input"
+                  type="email"
+                  placeholder="Email:"
+                />
+                <input
+                  class="header__form-input"
+                  type="password"
+                  placeholder="Password:"
+                />
+              </div>
+
+              <button class="header__form-btn" type="button" data-modal-open>
+                Розпочати
+              </button>
+            </form>
+          </div>
+
+          <!-- Модольное окно-->
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal-window">
+              <div class="modal-window__close">
+                <button
+                  type="button"
+                  class="modal-window__close-button"
+                  data-modal-close
+                >
+                  <svg class="modal-window__close-icon">
+                    <use href="./images/icons/icons.svg#Vector"></use>
+                  </svg>
+                </button>
+              </div>
+              <form class="form" autocomplete="off">
+                <div class="form__field">
+                  <label for="email" class="form__label">Email</label>
+                  <input
+                    type="emai"
+                    name="email"
+                    id="email"
+                    class="form__input"
+                  />
+                </div>
+                <div class="form__field">
+                  <label for="password" class="form__label">Password</label>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form__input"
+                  />
+                </div>
+
+                <label class="form__contract">
+                  <input
+                    type="checkbox"
+                    name="confirm"
+                    id="confirm"
+                    class="form__checkbox visually-hidden"
+                    required
+                  />
+                  <span class="custom-checkbox"></span>
+                  <div class="form__contract-wrapper">
+                    <span>Соглашаюсь с рассылкой и принимаю&nbsp; </span>
+                    <a href="#" target="_blank" class="form__link"
+                      >Условия договора</a
+                    >
+                  </div>
+                </label>
+
+                <button type="submit" class="form__btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="section features">
+        <div class="container">
+          <h2 class="section__title">Переваги</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__wrapper">
+                <img src="./images/features/Clock.png" alt="" />
+                <h3 class="features__title">Будь-коли</h3>
+                <p class="features__text">
+                  Навчайтесь у зручний для Вас час. Відеолекції, тести та форум
+                  доступні ціни цілодобово.
+                </p>
+              </div>
+              <div class="features__wrapper">
+                <img src="./images/features/Globe.png" alt="" />
+                <h3 class="features__title">Будь-де</h3>
+                <p class="features__text">
+                  Проходьте курси, не виходячи з дому чи в дорозі. Все, що Вам
+                  знадобиться, - це доступ до інтернету.
+                </p>
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__wrapper">
+                <img src="./images/features/Lyre.png" alt="" />
+              </div>
+            </li>
+            <li class="features__item">
+              <div class="features__wrapper">
+                <img src="./images/features/Phone.png" alt="" />
+                <h3 class="features__title">Будь-який пристрій</h3>
+                <p class="features__text">
+                  Навчайтесь на комп’ютері, планшеті чи телефоні: сайт
+                  підлаштується під Ваш пристрій.
+                </p>
+              </div>
+              <div class="features__wrapper">
+                <img src="./images/features/Man.png" alt="" />
+                <h3 class="features__title">Будь-хто</h3>
+                <p class="features__text">
+                  Наші курси абсолютно безкоштовні – захмарні ціни більше ніколи
+                  не стануть на заваді найкращій освіті.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section courses">
+        <div class="container">
+          <h2 class="section__title">Доступні курси</h2>
+          <h3 class="section__subtitle">
+            Запишіться прямо зараз на доступні курси
+          </h3>
+          <ul class="courses__list">
+            <li class="courses__item">
+              <div class="course__thumb">
+                <div class="course__description-wrapper">
+                  <p class="course__title">Основи програмування</p>
+                  <p class="course__description">
+                    After the first 50 completed projects to make a mistake with
+                    the deadlines almoust unreal.
+                    <a href="#" class="course__link">Read more...</a>
+                  </p>
+                  <div class="course__btn-wrapper">
+                    <button type="button" class="course__btn">
+                      ЗАРЕЄСТРУВАТИСЬ НА КУРС!
+                    </button>
+                  </div>
+                </div>
+
+                <img
+                  class="course__img"
+                  src="./images/courses/course1.png"
+                  alt="програмирование"
+                />
+              </div>
+            </li>
+            <li class="courses__item">
+              <div class="course__thumb">
+                <div class="course__description-wrapper">
+                  <p class="course__title">Розробка та аналіз алгоритмів</p>
+                  <p class="course__description">
+                    After the first 50 completed projects to make a mistake with
+                    the deadlines almoust unreal.
+                    <a href="#" class="course__link">Read more...</a>
+                  </p>
+                  <div class="course__btn-wrapper">
+                    <button type="button" class="course__btn">
+                      ЗАРЕЄСТРУВАТИСЬ НА КУРС!
+                    </button>
+                  </div>
+                </div>
+
+                <img
+                  class="course__img"
+                  src="./images/courses/course2.png"
+                  alt="програмирование"
+                />
+              </div>
+            </li>
+            <li class="courses__item">
+              <div class="course__thumb">
+                <div class="course__description-wrapper">
+                  <p class="course__title">Економіка для всіх</p>
+                  <p class="course__description">
+                    After the first 50 completed projects to make a mistake with
+                    the deadlines almoust unreal.
+                    <a href="#" class="course__link">Read more...</a>
+                  </p>
+                  <div class="course__btn-wrapper">
+                    <button type="button" class="course__btn">
+                      ЗАРЕЄСТРУВАТИСЬ НА КУРС!
+                    </button>
+                  </div>
+                </div>
+
+                <img
+                  class="course__img"
+                  src="./images/courses/course3.png"
+                  alt="програмирование"
+                />
+              </div>
+            </li>
+            <li class="courses__item">
+              <div class="course__thumb">
+                <div class="course__description-wrapper">
+                  <p class="course__title">Історія України</p>
+                  <p class="course__description">
+                    After the first 50 completed projects to make a mistake with
+                    the deadlines almoust unreal.
+                    <a href="#" class="course__link">Read more...</a>
+                  </p>
+                  <div class="course__btn-wrapper">
+                    <button type="button" class="course__btn">
+                      ЗАРЕЄСТРУВАТИСЬ НА КУРС!
+                    </button>
+                  </div>
+                </div>
+
+                <img
+                  class="course__img"
+                  src="./images/courses/course4.png"
+                  alt="програмирование"
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2 class="section__title">Партнери - освітні заклади</h2>
+        <div class="partners container">
+          <div>
+            <img
+              class="partners__img"
+              src="./images/partners/cambridge_logo.png"
+              alt=""
+            />
+            <p class="partners__name">Cambridge</p>
+          </div>
+          <div>
+            <img
+              class="partners__img"
+              src="./images/partners/harvard_logo.png"
+              alt=""
+            />
+            <p class="partners__name">Harvard</p>
+          </div>
+          <div>
+            <img
+              class="partners__img"
+              src="./images/partners/mit_logo.png"
+              alt=""
+            />
+            <p class="partners__name">MIT</p>
+          </div>
+          <div>
+            <img
+              class="partners__img"
+              src="./images/partners/ucla_logo.png"
+              alt=""
+            />
+            <p class="partners__name">UCLA</p>
+          </div>
+        </div>
+      </section>
+      <section class="section promo">
+        <div class="container promo__wrapper">
+          <h2 class="promo__title">Сертифікат від Гарварду</h2>
+          <div class="promo__text-wrapper">
+            <p class="promo__text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem ipsum has been the industry's standart dummy text
+              ever since 1500s, when an unknown printer took a gallery of type.
+            </p>
+            <button type="button" class="promo__btn">ОТРИМАТИ!</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team">
+        <div class="container">
+          <h2 class="section__title">Розробники</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <img src="./images/team/team-1.png" alt="" />
+              <div class="team__card">
+                <h3 class="team__name">Daniel Raynolds</h3>
+                <p class="team__text">
+                  After the first 50 completed projects to make a mistake with
+                  the deadlines almoust unreal.After the first hundred projects
+                  to brake the promises already imposible.
+                </p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - facebook.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - twitter.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - google.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img src="./images/team/team-2.png" alt="" />
+              <div class="team__card">
+                <h3 class="team__name">Nick Parson</h3>
+                <p class="team__text">
+                  After the first 50 completed projects to make a mistake with
+                  the deadlines almoust unreal.After the first hundred projects
+                  to brake the promises already imposible.
+                </p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - facebook.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - twitter.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - google.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img src="./images/team/team-3.png" alt="" />
+              <div class="team__card">
+                <h3 class="team__name">William Stanley</h3>
+                <p class="team__text">
+                  After the first 50 completed projects to make a mistake with
+                  the deadlines almoust unreal.After the first hundred projects
+                  to brake the promises already imposible.
+                </p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - facebook.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - twitter.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - google.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <img src="./images/team/team-4.png" alt="" />
+              <div class="team__card">
+                <h3 class="team__name">Sarah Noel</h3>
+                <p class="team__text">
+                  After the first 50 completed projects to make a mistake with
+                  the deadlines almoust unreal.After the first hundred projects
+                  to brake the promises already imposible.
+                </p>
+                <ul class="social">
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - facebook.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - twitter.png" alt="" />
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="social__link"
+                    >
+                      <img src="./images/team/social - google.png" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section form__registration">
+        <div class="container">
+          <h2 class="form__registration-title">Зареєструйся зараз</h2>
+          <h3 class="form__registration-subtitle">
+            Та отримай задоволкння від навчання
+          </h3>
+          <div class="form-registration-wrapper">
+            <form action="#" class="form__regist">
+              <div class="form__registration-input-wrapper">
+                <input
+                  class="form__registration-input"
+                  type="email"
+                  placeholder="Email:"
+                  required
+                />
+                <input
+                  class="form__registration-input"
+                  type="password"
+                  placeholder="Password:"
+                  required
+                />
+              </div>
+
+              <button
+                class="form__registration-btn"
+                type="button"
+                onclick="alert('Реєстрація Успішна!')"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section footer">
+      <div class="container">
+        <div class="footer__text-wrapper">
+          <p class="footer__text">
+            Made with love by &nbsp;<span class="footer__text-author"
+              >Alex Kuzmenko</span
+            >
+          </p>
+          <p class="footer__text">
+            Inspired by &nbsp;<span class="footer__text-author"
+              >PROMETHEUS</span
+            >
+          </p>
+        </div>
+
+        <ul class="footer__social-list">
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link" href="">
+              <img
+                class="footer__social-list-img"
+                src="./images/footer/twitter-blue.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link" href="">
+              <img
+                class="footer__social-list-img"
+                src="./images/footer/facebook-blue.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link" href="">
+              <img
+                class="footer__social-list-img"
+                src="./images/footer/google-plus-blue.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+        <ul class="footer__social-list">
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link" href="">
+              <img
+                class="footer__social-list-img"
+                src="./images/footer/twitter-footer.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link" href=""
+              ><img
+                class="footer__social-list-img"
+                src="./images/footer/facebook-footer.png"
+                alt=""
+            /></a>
+          </li>
+          <li class="footer__social-list-item">
+            <a class="footer__social-list-link" href="">
+              <img
+                class="footer__social-list-img"
+                src="./images/footer/google-plus-footer.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/gallery.js"></script>
+    <script type="text/javascrit" src="./js/register.js"></script>
+  </body>
+</html>

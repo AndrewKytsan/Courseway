@@ -1,0 +1,25 @@
+.address{
+    margin-top: 20px;
+}
+.address__list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    @media screen and (min-width:1200px) {
+        align-items: flex-start;
+    }
+}
+
+.address__list-item{
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.74;
+    font-weight: normal;
+    padding-top: 9px;
+}
+
+.logo__footer-text{
+    font-style: normal;
+    color: var(--white-cl);
+}

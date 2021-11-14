@@ -1,0 +1,100 @@
+.form__registration {
+  background-color: var(--form-bg);
+}
+.form__registr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.form__registration-title {
+  font-size: 60px;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--white-cl);
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    font-size: 50px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 26px;
+  }
+}
+.form__registration-subtitle {
+  font-size: 25px;
+  color: var(--white-cl);
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.68;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    font-size: 21px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
+}
+
+.form-registration-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form__registration-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+}
+.form__registration-input {
+  display: block;
+  width: 540px;
+  height: 60px;
+  border-radius: 5px;
+  border: 0;
+  padding-left: 25px;
+  @media screen and (min-width: 480px) and (max-width: 768px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 480px) {
+    width: 300px;
+  }
+}
+.form__registration-input:hover,
+.form__registration-input:focus {
+  outline: none;
+}
+.header__form-input::placeholder {
+  font-family: var(--logo-font);
+  font-weight: 400;
+  font-size: 25px;
+  color: #a1a1a1;
+}
+
+.form__registration-btn {
+  font-family: var(--logo-font);
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: auto;
+  margin-top: 30px;
+  padding: 15px 35px;
+  letter-spacing: 0.02em;
+  color: var(--white-cl);
+  background: var(--accent-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 5px;
+  transition: background-color 250ms var(--time-func);
+  @media screen and (max-width: 480px) {
+    padding: 12px 25px;
+  }
+}
+.form__registration-btn:hover,
+.form__registration-btn:focus {
+  outline: none;
+  background-color: var(--hover-cl);
+}

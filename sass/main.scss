@@ -1,0 +1,23 @@
+@import "./vendors/normalize";
+
+@import "./utils/variables";
+
+@import "./base/container";
+@import "./base/card-set";
+@import "./base/common";
+@import "./components/logo";
+@import "./components/mobile-menu";
+@import "./components/menu";
+@import "./components/form";
+@import "./components/social-icons";
+@import "./components/slider";
+@import "./components/form-registration";
+
+@import "./layout/section";
+@import "./layout/header";
+@import "./layout/_features";
+@import "./layout/_courses";
+@import "./layout/partners";
+@import "./layout/promo";
+@import "./layout/team";
+@import "./layout/_footer";
