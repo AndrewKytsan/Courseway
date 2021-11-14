@@ -1,16 +1,13 @@
-.promo {
-  background-image: url(../../images/promo/education.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: left;
-  @media screen and (min-width: 768px) {
-    background-position: center;
+.promo-wrapper {
+  background-color: var(--promo-bg);
+  display: flex;
+  flex-direction: row;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
   }
 }
-.promo__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+.promo__img {
+  width: 100%;
 }
 .promo__title {
   font-size: 20px;
@@ -19,28 +16,31 @@
   letter-spacing: 0.06em;
   line-height: 1.17;
   color: var(--white-cl);
-  text-align: right;
 
   @media screen and (max-width: 480px) {
-    color: var(--main-text-cl);
     text-align: center;
   }
   @media screen and (min-width: 768px) {
     font-size: 24px;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 35px;
+    font-size: 32px;
   }
 }
 .promo__text-wrapper {
-  width: 45%;
+  max-width: 30%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 33px;
-  @media screen and (min-width: 320px) and (max-width: 767.99px) {
-    width: 100%;
+  margin-top: 45px;
+  margin-left: 80px;
+  @media screen and (min-width: 320px) and (max-width: 1199.99px) {
+    max-width: 80%;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .promo__text {
@@ -50,13 +50,6 @@
   color: var(--white-cl);
   line-height: 1.8;
   letter-spacing: 0.02em;
-  width: 200px;
-  @media screen and (min-width: 768px) and (max-width: 1199.99px) {
-    width: 300px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 365px;
-  }
 }
 
 .promo__btn {
